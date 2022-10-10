@@ -1,0 +1,12 @@
+version: 1.0
+runtime: php81
+build:
+  commands:
+    build:
+      - echo no build command for PHP
+run:
+  runtime-version: 8.1.10
+  command: php -S localhost:3000 -t .
+  network:
+    port: 3000
+    env: APP_PORT

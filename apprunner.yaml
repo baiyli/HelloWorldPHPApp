@@ -3,10 +3,8 @@ runtime: php81
 build:
   commands:
     build:
-      - echo $CODEBUILD_BUILD_IMAGE
       - echo no build command for PHP
 run:
-  runtime-version: 8.1.10
   command: php -S 0.0.0.0:3000 -t .
   network:
     port: 3000
